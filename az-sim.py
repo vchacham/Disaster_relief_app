@@ -6,12 +6,12 @@ import folium
 from folium.plugins import HeatMap
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-fp = "/Users/adityasamant/Desktop/Team-14/heatmap.html"
-fp_two = "/Users/adityasamant/Desktop/Team-14/heatmap.html"
-df = pd.read_csv("/Users/adityasamant/Desktop/Team-14/city-data.csv")
+
+
+fp = "FILE PATH/<filename>.html"
+
+df = pd.read_csv("data.csv file path")
 
 #Arizona [Lat, Lon]; zoom_start --> some random zoom focus
 f_map = folium.Map([34.048927, -111.093735], zoom_start=13)
@@ -27,6 +27,9 @@ hm_wide = HeatMap( zip(df.Y.values, df.X.values, df['No. of Tickets']),
                  )
 f_map.add_child(hm_wide)
 f_map.save(fp)
+
+# Updating data
+
 
 
 
