@@ -1,4 +1,4 @@
-# Team-14
+# Disaster relief app - Relief.net
 
 About this Application:
 Relief.net is a platform for communication and resource deployment between small scale NGOs that aid communities on a grassroots level
